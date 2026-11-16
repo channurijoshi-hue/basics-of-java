@@ -46,3 +46,27 @@ next()	                  Venu	                  String	                         
 nextLine()	              Hello Java	            String	                                 Reads an entire line of text including spaces.
 next().charAt(0)	        A	                      char	                                   Reads a single character by taking the first character of a string.
 nextBoolean()	            true	                  boolean	                                 Reads a true or false logical value.
+
+program:
+import java.util.Scanner;
+public class extension {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age;
+        long salary;
+        float average;
+        double total;
+        String employee_name;
+        System.out.println("============");
+        age = sc.nextInt();
+        salary = sc.nextLong();
+        average = sc.nextFloat();
+        total = sc.nextDouble();
+        sc.nextLine(); 
+        employee_name = sc.nextLine();
+        System.out.println(age);
+        System.out.println(salary);
+        System.out.println(average);
+        System.out.println(total);
+        System.out.println(employee_name);
+        sc.close();
