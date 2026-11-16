@@ -31,18 +31,18 @@ non-primitive data types:-
 2.string
 3.interface
 4.class
-5.object
+5.object 
 
 Method Explanation Table
 
 Here is a clean breakdown of the text displayed in the slide:
 
-Scanner Method	         Example 	                  Return Type	
-nextInt()	                25	                    int	Reads a whole integer value.
-nextLong()	              9876543210L	            long	Reads a large whole integer value.
-nextFloat()	              85.5f	                  float	Reads a single-precision decimal number.
-nextDouble()	            25000.75	              double	Reads a double-precision decimal number.
-next()	                  Venu	                  String	Reads a single word (stops at a space).
-nextLine()	              Hello Java	            String	Reads an entire line of text including spaces.
-next().charAt(0)	        A	                      char	Reads a single character by taking the first character of a string.
-nextBoolean()	            true	                  boolean	Reads a true or false logical value.
+Scanner Method	         Example 	              Return Type	                                  Description
+nextInt()	                25	                    int	                                     Reads a whole integer value.
+nextLong()	              9876543210L	            long	                                   Reads a large whole integer value.
+nextFloat()	              85.5f	                  float	                                   Reads a single-precision decimal number.
+nextDouble()	            25000.75	              double	                                 Reads a double-precision decimal number.
+next()	                  Venu	                  String	                                 Reads a single word (stops at a space).
+nextLine()	              Hello Java	            String	                                 Reads an entire line of text including spaces.
+next().charAt(0)	        A	                      char	                                   Reads a single character by taking the first character of a string.
+nextBoolean()	            true	                  boolean	                                 Reads a true or false logical value.
