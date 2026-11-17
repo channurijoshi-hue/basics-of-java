@@ -19,3 +19,25 @@ Control
     ├── continue
     ├── break
     └── return
+syntax:
+if condition{
+//block of code
+}
+else{
+//block of code
+}
+import java.util.Scanner;
+
+public class operators {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number");
+        int num = sc.nextInt();
+
+        String result = (num % 2 == 0) ? "Even" : "Odd";
+        System.out.println(result);
+
+        sc.close();
+    }
+}
