@@ -302,3 +302,78 @@ public class calender{
         }
     }
 }
+
+
+
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class Calendar2002 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===== CALENDAR PROGRAM =====");
+        System.out.println("Years available: 2002 to 2026");
+
+        System.out.print("Enter year: ");
+        int year = sc.nextInt();
+
+        if (year < 2002 || year > 2026) {
+            System.out.println("Please enter year between 2002 and 2026");
+        } else {
+
+            String[] months = {
+                "January", "February", "March",
+                "April", "May", "June",
+                "July", "August", "September",
+                "October", "November", "December"
+            };
+
+            Calendar cal = Calendar.getInstance();
+
+            for (int month = 0; month < 12; month++) {
+
+                cal.set(year, month, 1);
+
+                int days = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+                int firstDay = cal.get(Calendar.DAY_OF_WEEK);
+
+                System.out.println("\n      " + months[month] + " " + year);
+                System.out.println(" Sun Mon Tue Wed Thu Fri Sat");
+
+                for (int i = 1; i < firstDay; i++) {
+                    System.out.print("    ");
+                }
+
+                for (int day = 1; day <= days; day++) {
+                    System.out.printf("%4d", day);
+
+                    if ((day + firstDay - 1) % 7 == 0) {
+                        System.out.println();
+                    }
+                }
+
+                System.out.println("\n");
+            }
+        }
+
+        sc.close();
+    }
+}
+
+
+public class stars {
+    public static void main(String[] args) {
+        int n=0;
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
+                System.out.print("* ");
+                n++;
+            }
+            System.out.println();
+        }
+        System.out.println("Total stars printed: " + n);
+    }
+}
+
